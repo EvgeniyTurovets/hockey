@@ -1,5 +1,3 @@
-
-/* Локализация datepicker */
 $.datepicker.regional['ru'] = {
 	closeText: 'Закрыть',
 	prevText: 'Предыдущий',
@@ -18,15 +16,9 @@ $.datepicker.regional['ru'] = {
 	yearSuffix: ''
 };
 $.datepicker.setDefaults($.datepicker.regional['ru']);
+
 $(function(){
-    $("#txtStartDate").datepicker();
-    $("#txtEndDate").datepicker();
+	$("#datepicker1").datepicker();
+	$("#datepicker2").datepicker();
+
 });
-// function customRange(input)
-// {
-//     var min = new Date();
-//     return {
-//         minDate: ((input.id == "txtStartDate") ? min : (input.id == "txtEndDate" ? $("#txtStartDate").datepicker("getDate") : null)),
-//         maxDate: (input.id == "txtStartDate" ? $("#txtEndDate").datepicker("getDate") : null)
-//     };
-// }

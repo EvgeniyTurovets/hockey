@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    
 </head>
 <body>
     <div class="width-container">
@@ -17,17 +15,156 @@
            <div class="sk-zakaz">
                <div class="zakaz-top">
                    <form>
-
-                       <div>
-                           <label>период</label>
-                           <input id="#txtStartDate">
-                        </div>
-                       <div>
-                           <label>по</label>
-                           <input id="#txtEndDate">
-                        </div>
-                        <button type="submit">Показать</button>
+                       <div class="zakaz-form-flex">
+                            <div class="zakaz-top-item">
+                                <label>ПЕРИОД</label>
+                                <img src="./img/cal.png" for="datepicker1">
+                                <input type="text" id="datepicker1" readonly>
+                                
+                            </div>
+                            <div  class="zakaz-top-item">
+                                <label>ПО</label>
+                                <img src="./img/cal.png" for="datepicker2">
+                                <input type="text" id="datepicker2" readonly>
+                                
+                            </div>
+                       </div>
+                    
+                    <button>Показать</button>
                    </form>
+               </div>
+               <div class="zakaz-bot">
+                   <table>
+                       <thead>
+                           <tr>
+                               <td class="zakaz-num">
+                                № заказа
+                               </td>
+
+                               <td class="zakaz-data">
+                                дата заказа
+                               </td>
+
+                               <td class="zakaz-status">
+                                статус оплаты
+                               </td>
+
+                               <td class="zakaz-mer">
+                                мероприятие
+                               </td>
+
+                               <td class="zakaz-price">
+                                стоимость
+                               </td>
+
+                               <td></td>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                                <td>
+                                    <span> № заказа</span>
+                                    <div>22</div>
+                                </td>
+
+                                <td>
+                                    <span>дата заказа</span>
+                                    <div>20.06.2020 18:00</div>
+                                </td>
+
+                                <td>
+                                    <span>статус оплаты</span>
+                                    <div>Неоплченоо</div>
+                                </td>
+
+                                <td>
+                                    <span>мероприятие</span>
+                                    <div>Сочи - СКА</div>
+                                </td>
+
+                                <td>
+                                    <span>стоимость</span>
+                                    <div>10.00</div>
+                                </td>
+
+                                <td>
+                                    <div class="zakaz-t-btn">
+                                        <a href="">Удалить</a>
+                                        <a href="">Оплата</a>
+                                        <a href="">Билет на почту</a>
+                                    </div>
+                                </td>
+                           </tr>
+                            <tr>
+                                <td>
+                                    <span> № заказа</span>
+                                    <div>22</div>
+                                </td>
+
+                                <td>
+                                    <span>дата заказа</span>
+                                    <div>20.06.2020 18:00</div>
+                                </td>
+
+                                <td>
+                                    <span>статус оплаты</span>
+                                    <div>Неоплченоо</div>
+                                </td>
+
+                                <td>
+                                    <span>мероприятие</span>
+                                    <div>Сочи - СКА</div>
+                                </td>
+
+                                <td>
+                                    <span>стоимость</span>
+                                    <div>10.00</div>
+                                </td>
+
+                                <td>
+                                    <div class="zakaz-t-btn">
+                                        <a href="">Скачать билет</a>
+                                        <a href="">Оплата</a>
+                                        <a href="">Билет на почту</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span> № заказа</span>
+                                    <div>22</div>
+                                </td>
+
+                                <td>
+                                    <span>дата заказа</span>
+                                    <div>20.06.2020 18:00</div>
+                                </td>
+
+                                <td>
+                                    <span>статус оплаты</span>
+                                    <div>Неоплченоо</div>
+                                </td>
+
+                                <td>
+                                    <span>мероприятие</span>
+                                    <div>Сочи - Салават Юлаев</div>
+                                </td>
+
+                                <td>
+                                    <span>стоимость</span>
+                                    <div>10.00</div>
+                                </td>
+
+                                <td>
+                                    <div class="zakaz-t-btn">
+                                        <a href="">Удалить</a>
+                                        <a href="">Оплата</a>
+                                        <a href="">Билет на почту</a>
+                                    </div>
+                                </td>
+                            </tr>
+                       </tbody>
+                   </table>
                </div>
            </div>
         </div>
