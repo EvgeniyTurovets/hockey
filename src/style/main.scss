@@ -1219,6 +1219,7 @@ body {
 }
 .sector img{
     object-fit: contain;
+    width: 100%;
 }
 .sector-schema{
     text-align: center;
@@ -1227,7 +1228,6 @@ body {
     margin: 0 auto;
 }
 .sector-schema-wrap{
-    min-width: 994px;
     width: 994px;
     margin: 0 auto;
     position: relative;
@@ -1242,23 +1242,52 @@ body {
 .sblue path{
     fill: #00a19e;
 }
-.sbrau path{
-    fill: #996d16;
+.dlue path{
+    fill: #00a19e;
 }
-.sector-schema path{
-    transition: 0.3s all;
-    cursor: pointer;
-}
-.sector-schema path:hover{
+.dlue:hover path{
     fill: #00173f;
     stroke: 1px;
     stroke: #00a19e;
     stroke-width: 2px;
 }
+.dgreen path{
+    fill: #95c11a;
+}
+.dgreen:hover path{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #95c11a;
+    stroke-width: 2px;
+}
+.sbrau path{
+    fill: #996d16;
+}
+.sgreen path{
+    fill: #95c11a;
+}
+
+.sector-schema path{
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.sblue path:hover{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #00a19e;
+    stroke-width: 2px;
+}
+
 .sbrau path:hover{
     fill: #00173f;
     stroke: 1px;
     stroke: #996d16;
+    stroke-width: 2px;
+}
+.sgreen path:hover{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #95c11a;
     stroke-width: 2px;
 }
 .sector-text div{
@@ -1415,4 +1444,31 @@ body {
 }
 .secbot-glass:hover .glas-hover{
     display: inline;
+}
+.sector-text{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    top: 0;
+    pointer-events: none;
+}
+
+.sbrau .sbiss{
+    fill: #f3e2c0;
+    pointer-events: none;
+    z-index: 1;
+    position: relative;
+}
+.sblue .sice{
+    fill: #bbd4f0;
+    pointer-events: none;
+    z-index: 1;
+    position: relative;
+}
+.gbiss{
+    position: relative;
+}
+.ice{
+    position: relative;
 }
