@@ -168,7 +168,9 @@ body {
   .pay-alert {
     margin-top: 50px; }
   .sk-pay-l {
-    padding-top: 0; } }
+    padding-top: 0; }
+  .pay-img-row {
+    margin: 30px 0; } }
 
 @media (max-width: 559px) {
   .pay-img-row img {
@@ -269,7 +271,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .sk-data button {
+    margin-top: 40px; } }
 
 @media (max-width: 374px) {
   .sk-data-item input {
@@ -529,17 +535,38 @@ body {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
-  .zakaz-top button {
-    margin-top: 25px;
-    width: 148px;
-    height: 40px; }
-  .zakaz-top input {
-    width: 100%; }
   .zakaz-form-flex {
-    margin-right: -10px; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-left: 15px; }
+  .zakaz-top-item {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    position: relative;
+    margin: 0;
+    margin-bottom: 15px; }
+  .zakaz-top input {
+    width: 185px; }
+  .zakaz-top label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translate(-130%, -50%);
+            transform: translate(-130%, -50%); }
   table tbody td div.zakaz-t-btn {
     -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column; }
+  .zakaz-top button {
+    margin: 0;
+    margin-top: 10px; } }
+
+@media (max-width: 374px) {
+  .zakaz-top label {
+    font-size: 13px; }
+  .zakaz-form-flex {
+    margin-left: 25px; } }
 
 .mesto {
   padding-top: 50px;
