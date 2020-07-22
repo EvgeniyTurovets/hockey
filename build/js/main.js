@@ -179,4 +179,11 @@ $(function(){
 		}
 		
 	})
+
+
+
+	$('.mesto-burger').click(function(){
+		$(this).toggleClass('active')
+		$('.mesto-reg').toggleClass('active')
+	})
 })

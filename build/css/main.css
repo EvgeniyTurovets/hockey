@@ -1034,7 +1034,43 @@ body {
         flex: 0 0 335px;
     padding: 0 20px; } }
 
+.mesto-burger {
+  display: none; }
+
 @media (max-width: 767px) {
+  .mesto-header {
+    position: relative;
+    overflow: hidden;
+    min-height: 128px; }
+  .mesto-burger {
+    display: block;
+    width: 20px;
+    height: 17px;
+    margin-top: 12px;
+    position: relative; }
+  .mesto-burger span {
+    width: 20px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    transition: 0.3s all; }
+  .mesto-burger span:nth-child(1) {
+    top: 0; }
+  .mesto-burger span:nth-child(2) {
+    top: calc(50% - 1.5px); }
+  .mesto-burger span:nth-child(3) {
+    bottom: 0; }
+  .mesto-burger.active span:nth-child(1) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 40%; }
+  .mesto-burger.active span:nth-child(3) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 40%; }
+  .mesto-burger.active span:nth-child(2) {
+    opacity: 0; }
   .plashka > div {
     width: 345px; }
   .mesto {
@@ -1047,18 +1083,37 @@ body {
   .mesto-info-item {
     width: 100%; }
   .mesto-header-left > a {
-    padding: 15px; }
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #c9c9c9; }
   .mesto-reg > a {
-    padding: 15px; }
-  .mesto-header {
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; }
+    padding: 12px;
+    border-bottom: 1px solid #c9c9c9;
+    width: 100%;
+    text-align: center; }
   .mesto-reg {
-    -ms-flex-pack: center;
-        justify-content: center; }
+    border-bottom: 0;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 43px;
+    transition: 0.3s all;
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%); }
+  .mesto-reg.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
   .mesto-header-left {
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border-bottom: 0;
+    width: 151px; }
   .led-img {
     width: 325px; }
   .led-img {
@@ -1140,10 +1195,6 @@ body {
     margin-bottom: 20px; }
   .led-sum {
     font-size: 20px; }
-  .mesto-header-left > a {
-    padding: 10px; }
-  .mesto-header-left {
-    margin: 0 -10px; }
   .plashka > div {
     font-size: 20px; }
   .plashka img {
@@ -1165,8 +1216,6 @@ body {
     font-size: 30px; }
   .modal-wrap {
     padding: 25px 15px; }
-  .mesto-header-left {
-    font-size: 12px; }
   .merop-item img {
     height: 80px; }
   .merop-item > div {
