@@ -112,6 +112,7 @@ $(function(){
 	$(".activepath").mouseout(function(){
 		$(".activepath").removeClass('pathfocus')
 		ticker = 0
+		
 	})
 
 	$(document).mouseup(function (e){ // событие клика по веб-документу
@@ -132,6 +133,16 @@ $(function(){
 	}
 	$('.smodal-right-btn').click(function(){
 		let nextPath = parseInt(dataId) + 1
+		if(nextPath == 327){
+			nextPath = 400
+		}
+		if(nextPath == 217){
+			nextPath = 300
+		}
+		if(nextPath == 118){
+			nextPath = 200
+		}
+		console.log(nextPath)
 		if(nextPath <= 413){
 			let $nextPath = $('.activepath[data-id=' + nextPath + ']')
 			
@@ -147,10 +158,18 @@ $(function(){
 
 	$('.smodal-left-btn').click(function(){
 		let prevPath = parseInt(dataId) - 1
-		
-		if(prevPath >= 400){
+		if(prevPath == 399){
+			prevPath = 326
+		}
+		if(prevPath == 299){
+			prevPath = 217
+		}
+		if(prevPath == 199){
+			prevPath = 118
+		}
+		if(prevPath >= 100){
 			let $nextPath = $('.activepath[data-id=' + prevPath + ']')
-
+			
 			dataId = $nextPath.attr('data-id')
 			dataPrice = $nextPath.attr('data-price')
 			dataMest = $nextPath.attr('data-mest')

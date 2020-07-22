@@ -1251,10 +1251,22 @@ body {
     stroke: #00a19e;
     stroke-width: 2px;
 }
+.dlue.active path{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #00a19e;
+    stroke-width: 2px;
+}
 .dgreen path{
     fill: #95c11a;
 }
 .dgreen:hover path{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #95c11a;
+    stroke-width: 2px;
+}
+.dgreen.active path{
     fill: #00173f;
     stroke: 1px;
     stroke: #95c11a;
@@ -1284,7 +1296,19 @@ body {
     stroke: #996d16;
     stroke-width: 2px;
 }
+.sbrau path.active{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #996d16;
+    stroke-width: 2px;
+}
 .sgreen path:hover{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #95c11a;
+    stroke-width: 2px;
+}
+.sgreen path.active{
     fill: #00173f;
     stroke: 1px;
     stroke: #95c11a;
@@ -1412,13 +1436,338 @@ body {
     stroke: #fab31a;
     stroke-width: 2px;
 }
+.elowgreen.active path{
+    fill: #00173f;
+    stroke: 1px;
+    stroke: #fab31a;
+    stroke-width: 2px;
+}
 .elowgreen:hover .green{
     fill: #00173f;
     stroke: 1px;
     stroke: #95c11a;
     stroke-width: 2px;
 }
-
+.s100{
+    top: 44.1%;
+    left: 24.2%;
+    transform: rotate(-82deg);
+}
+.s101{
+    top: 35.5%;
+    left: 27%;
+    transform: rotate(-50deg);
+}
+.s102{
+    top: 31%;
+    left: 33.5%;
+    transform: rotate(-15deg);
+}
+.s103{
+    top: 30%;
+    left: 40.6%;
+    transform: rotate(0deg);
+}
+.s104{
+    top: 30%;
+    left: 47.9%;
+    transform: rotate(0deg);
+}
+.s105{
+    top: 30%;
+    left: 55.3%;
+    transform: rotate(0deg);
+}
+.s106{
+    top: 31%;
+    left: 62.7%;
+    transform: rotate(15deg);
+}
+.s107{
+    top: 36%;
+    left: 69%;
+    transform: rotate(50deg);
+}
+.s108{
+    top: 41.2%;
+    left: 68.1%;
+    transform: rotate(71deg);
+}
+.s109{
+    top: 44.5%;
+    left: 71.9%;
+    transform: rotate(82deg);
+}
+.s110{
+    top: 53.5%;
+    left: 71.9%;
+    transform: rotate(90deg);
+}
+.s111{
+    top: 62.1%;
+    left: 68.9%;
+    transform: rotate(-46deg);
+}
+.s112{
+    top: 67%;
+    left: 62.5%;
+    transform: rotate(-14deg);
+}
+.s113{
+    top: 67.6%;
+    left: 55.2%;
+    transform: rotate(0deg);
+}
+.s114{
+    top: 67.6%;
+    left: 47.9%;
+    transform: rotate(0deg);
+}
+.s115{
+    top: 67.6%;
+    left: 40.5%;
+    transform: rotate(0deg);
+}
+.s116{
+    top: 66.6%;
+    left: 33.8%;
+    transform: rotate(16deg);
+}
+.s117{
+    top: 61.6%;
+    left: 27.8%;
+    transform: rotate(50deg);
+}
+.s118{
+    top: 53.6%;
+    left: 24%;
+    transform: rotate(-90deg);
+}
+.s200{
+    top: 41.5%;
+    left: 12%;
+    transform: rotate(-79deg);
+}
+.s201{
+    top: 26.5%;
+    left: 18%;
+    transform: rotate(-49deg);
+}
+.s202{
+    top: 17.3%;
+    left: 30.3%;
+    transform: rotate(-19deg);
+}
+.s203{
+    top: 14.5%;
+    left: 40.9%;
+    transform: rotate(-7deg);
+}
+.s204{
+    top: 14.3%;
+    left: 48.1%;
+    transform: rotate(0deg);
+}
+.s205{
+    top: 14.5%;
+    left: 55.7%;
+    transform: rotate(7deg);
+}
+.s206{
+    top: 17.1%;
+    left: 66.2%;
+    transform: rotate(21deg);
+}
+.s207{
+    top: 26.1%;
+    left: 78.5%;
+    transform: rotate(46deg);
+}
+.s208{
+    top: 41.1%;
+    left: 84.7%;
+    transform: rotate(76deg);
+}
+.s209{
+    top: 56.9%;
+    left: 84.7%;
+    transform: rotate(104deg);
+}
+.s210{
+    top: 71.7%;
+    left: 78.5%;
+    transform: rotate(-45deg);
+}
+.s211{
+    top: 80.8%;
+    left: 66.4%;
+    transform: rotate(-20deg);
+}
+.s212{
+    top: 83.6%;
+    left: 55.7%;
+    transform: rotate(-7deg);
+}
+.s213{
+    top: 84%;
+    left: 48.2%;
+    transform: rotate(0deg);
+}
+.s214{
+    top: 83.6%;
+    left: 40.9%;
+    transform: rotate(7deg);
+}
+.s215{
+    top: 80.6%;
+    left: 30.2%;
+    transform: rotate(18deg);
+}
+.s216{
+    top: 71.6%;
+    left: 18.2%;
+    transform: rotate(48deg);
+}
+.s217{
+    top: 57.6%;
+    left: 12.2%;
+    transform: rotate(78deg);
+}
+.s300{
+    top: 49.1%;
+    left: 5.3%;
+    transform: rotate(-90deg);
+}
+.s301{
+    top: 41.3%;
+    left: 5.8%;
+    transform: rotate(-79deg);
+}
+.s302{
+    top: 34.3%;
+    left: 7.2%;
+    transform: rotate(-71deg);
+}
+.s303{
+    top: 21.5%;
+    left: 13.7%;
+    transform: rotate(-47deg);
+}
+.s304{
+    top: 10.3%;
+    left: 28.6%;
+    transform: rotate(-20deg);
+}
+.s305{
+    top: 7.3%;
+    left: 42.8%;
+    transform: rotate(-4deg);
+}
+.s306{
+    top: 7.3%;
+    left: 53.9%;
+    transform: rotate(4deg);
+}
+.s307{
+    top: 8.5%;
+    left: 63%;
+    transform: rotate(13deg);
+}
+.s308{
+    top: 10.9%;
+    left: 69.7%;
+    transform: rotate(21deg);
+}
+.s309{
+    top: 14.9%;
+    left: 76.4%;
+    transform: rotate(32deg);
+}
+.s310{
+    top: 20.5%;
+    left: 82.4%;
+    transform: rotate(46deg);
+}
+.s311{
+    top: 27.1%;
+    left: 86.7%;
+    transform: rotate(60deg);
+}
+.s312{
+    top: 34.1%;
+    left: 89.5%;
+    transform: rotate(70deg);
+}
+.s313{
+    top: 41.5%;
+    left: 90.9%;
+    transform: rotate(80deg);
+}
+.s314{
+    top: 49.1%;
+    left: 91.4%;
+    transform: rotate(90deg);
+}
+.s315{
+    top: 57%;
+    left: 90.9%;
+    transform: rotate(102deg);
+}
+.s316{
+    top: 64.2%;
+    left: 89.4%;
+    transform: rotate(112deg);
+}
+.s317{
+    top: 72.2%;
+    left: 86%;
+    transform: rotate(-53deg);
+}
+.s318{
+    top: 80.2%;
+    left: 80%;
+    transform: rotate(-39deg);
+}
+.s319{
+    top: 85.8%;
+    left: 72.1%;
+    transform: rotate(-24deg);
+}
+.s320{
+    top: 89.1%;
+    left: 63.9%;
+    transform: rotate(-12deg);
+}
+.s321{
+    top: 90.9%;
+    left: 54%;
+    transform: rotate(-4deg);
+}
+.s322{
+    top: 90.9%;
+    left: 43%;
+    transform: rotate(4deg);
+}
+.s323{
+    top: 87.6%;
+    left: 28.8%;
+    transform: rotate(18deg);
+}
+.s324{
+    top: 76.7%;
+    left: 13.8%;
+    transform: rotate(48deg);
+}
+.s325{
+    top: 64.4%;
+    left: 7.5%;
+    transform: rotate(-111deg);
+}
+.s326{
+    top: 57%;
+    left: 5.8%;
+    transform: rotate(-100deg);
+}
 .s400{
     top: 38.5%;
     left: 0.8%;
