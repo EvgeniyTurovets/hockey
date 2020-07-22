@@ -1166,11 +1166,16 @@ body {
 
 .sector-schema-wrap {
   width: 994px;
+  height: 813px;
   margin: 0 auto;
   position: relative; }
 
 .sector-schema-wrap > img {
-  width: 100%; }
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .sector-schema .schema-svg {
   position: absolute;
@@ -1363,6 +1368,15 @@ body {
 
 .ice {
   position: relative; }
+
+.sblue.ice > path {
+  fill: #0e70b8; }
+
+.sblue.ice > path:hover {
+  fill: #00173f;
+  stroke: 1px;
+  stroke: #00a19e;
+  stroke-width: 2px; }
 
 .elowgreen .yelow {
   fill: #fab31a; }
@@ -1856,6 +1870,21 @@ body {
   -webkit-transform: rotate(-102deg);
           transform: rotate(-102deg); }
 
+.sice1 {
+  top: 18.2%;
+  color: #0e70b8 !important;
+  left: 47%; }
+
+.sice2 {
+  top: 80%;
+  color: #0e70b8 !important;
+  left: 47%; }
+
+.sbrau2 {
+  top: 4.2%;
+  color: #996d16 !important;
+  left: 47%; }
+
 .smodal {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1967,7 +1996,8 @@ body {
 
 @media (max-width: 1199px) {
   .sector-schema-wrap {
-    width: 700px; }
+    width: 700px;
+    height: 570px; }
   .sector-text div {
     font-size: 85%; } }
 
