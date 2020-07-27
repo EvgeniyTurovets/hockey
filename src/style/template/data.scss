@@ -1,0 +1,95 @@
+.sk-data{
+    padding-top: 126px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 81px;
+}
+.sk-data-item {
+    margin-bottom: 20px;
+}
+.sk-data-item input{
+    width: 310px;
+    height: 41px;
+    padding: 0 15px;
+    border: 1px solid #c9c9c9;
+    font-family: "NeoSansPro";
+}
+.sk-data-item input:focus{
+    outline: none;
+}
+.sk-data-item {
+    position: relative;
+}
+.sk-data-item label{
+    font-size: 25px;
+    font-family: "LeagueGothic";
+    color: #00a19e;
+    top: 50%;
+    position: absolute;
+    left: -15px;
+    transform: translate(-100%, -50%);
+}
+.sk-data-item label span{
+    position: absolute;
+    color: #febe10;
+    right: 0;
+    transform: translateX(100%);
+}
+.sk-data button{
+    font-family: "LeagueGothic";
+    font-size: 25px;
+    color: #9a9a9a;
+    transition: 0.3s all;
+    padding: 17px 33px;
+    width: 192px;
+    border: 1px solid #febe10;
+    background-color: transparent;
+}
+.sk-data button:hover{
+    background-color: #febe10;
+    color: #ffffff;
+    cursor: pointer;
+}
+.sk-data button:focus{
+    outline: none;
+}
+.sk-data form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width: 1199px){
+    .sk-data{
+        padding-top: 50px;
+    }
+}
+@media(max-width: 767px){
+    .sk-data-item label{
+        position: relative;
+        transform: translate(0, 0);
+        top: auto;
+        left: auto;
+        width: max-content;
+        margin-bottom: 5px;
+    }
+    .sk-data-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .sk-data button{
+        margin-top: 40px;
+    }
+}
+@media(max-width: 374px){
+    .sk-data-item input{
+        width: 100%;
+    }
+    .sk-data-item{
+        width: 100%;
+    }
+    .sk-data form{
+        width: 100%;
+    }
+}

@@ -1,0 +1,299 @@
+.sk-zakaz{
+    padding-top: 100px;
+}
+.zakaz-top form{
+    padding-left: 20px;
+    display: flex;
+}
+.zakaz-top label{
+    margin: 0 13px;
+}
+.zakaz-top-item{
+    position: relative;
+}
+.zakaz-top input{
+    width: 184px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #c9c9c9;
+    position: relative;
+    z-index: 2;
+}
+.zakaz-top input:focus{
+    outline: none;
+}
+.zakaz-top-item img{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+}
+.zakaz-top button{
+    font-family: "LeagueGothic";
+    margin-left: 19px;
+    width: 146px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #febe10;
+    font-size: 25px;
+    color: #9a9a9a;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.zakaz-top button:focus{
+    outline: none;
+   
+}
+.zakaz-top button:hover{
+    background-color: #febe10;
+    color: #ffffff;
+}
+
+.zakaz-bot table thead  td{
+    padding: 20px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.zakaz-bot table tbody td{
+    padding: 24px 0;
+    font-family: "LeagueGothic";
+    font-size: 22px;
+}
+.zakaz-bot table tbody td span{
+    display: none;
+}
+.zakaz-bot table tbody tr{
+    border-bottom: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+}
+.zakaz-bot table{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.zakaz-bot table{
+    text-align: center;
+    width: 100%;
+}
+.zakaz-t-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zakaz-t-btn a{
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #febe10;
+    color: #b6b6b6;
+    font-family: "LeagueGothic";
+    width: 134px;
+    transition: 0.3s all;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.zakaz-t-btn a:hover{
+    color: #ffffff;
+    background-color: #febe10;
+}
+.zakaz-top{
+    margin-bottom: 33px;
+}
+.sk-zakaz{
+    padding-bottom: 50px;
+}
+.zakaz-form-flex{
+    display: flex;
+}
+.ui-state-active, .ui-widget-content .ui-state-active{
+    background-color: #febe10;
+    border: 1px solid #febe10;
+    color: #ffffff;
+}
+.ui-widget{
+    font-family: inherit;
+}
+@media(max-width: 1199px){
+    .zakaz-bot table thead td{
+        padding: 20px 5px;
+    }
+    .sk-zakaz{
+        padding-top: 20px;
+    }
+    .zakaz-t-btn a{
+        width: 115px;
+    }
+    
+}
+@media(max-width: 1023px){
+    .zakaz-bot table thead td{
+        font-size: 12px;
+    }
+    .zakaz-bot table tbody td{
+        font-size: 20px;
+    }
+}
+@media(max-width: 991px){
+    .zakaz-t-btn a {
+        width: 87px;
+        font-size: 18px;
+        height: 35px;
+    }
+    .zakaz-bot table tbody td {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    
+    .zakaz-top form{
+        padding-left: 0;
+    }
+    .zakaz-top input{
+        font-size: 16px;
+    }
+    .zakaz-top input{
+        width: 155px;
+        height: 35px;
+    }
+    .zakaz-top button{
+        font-size: 20px;
+        width: 100px;
+        height: 35px;
+    }
+}
+@media(max-width: 767px){
+    .zakaz-bot table thead{
+        display: none;
+    }
+    .zakaz-bot table tbody td span{
+        display: block;
+        font-family: "NeoSansPro", "Arial", sans-serif;
+        font-size: 14px; 
+        width: 50%;
+        text-align: left;
+    }
+    .zakaz-bot table tbody td div{
+        width: 50%;
+        text-align: right;
+    }
+    .zakaz-bot table tbody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .zakaz-bot table tbody tr{
+        display: flex;
+        width: calc(100% / 2 - 20px);
+        flex-direction: column;
+        border: 1px solid #c9c9c9;
+        padding: 10px 10px;
+        margin: 0 10px;
+        margin-bottom: 25px;
+    }
+    .zakaz-bot table tbody tr td{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #c9c9c9;
+        font-size: 18px;
+    }
+    .zakaz-bot table tbody tr td:last-child{
+        border-bottom: 0;
+    }
+    table tbody td div.zakaz-t-btn{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .zakaz-t-btn a{
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    .zakaz-top input{
+        width: 135px
+    }
+    .zakaz-top-item img{
+        right: 5px;
+    }
+    .zakaz-top input{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 559px){
+    .zakaz-bot table tbody tr{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    table tbody td div.zakaz-t-btn{
+        flex-direction: row;
+    }
+    .zakaz-top-item{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .zakaz-top label{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .zakaz-top-item img{
+        top: auto;
+        bottom: 3px;
+    }
+    .zakaz-top form{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media(max-width: 450px){
+    .zakaz-top form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .zakaz-form-flex{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .zakaz-top-item{
+        flex-direction: row;
+        position: relative;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .zakaz-top input{
+        width: 185px;
+    }
+    .zakaz-top label{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-130%, -50%);
+    }
+    table tbody td div.zakaz-t-btn{
+        flex-direction: column;
+    }
+    .zakaz-top button{
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 374px){
+    .zakaz-top label{
+        font-size: 13px;
+    }
+    .zakaz-form-flex{
+        margin-left: 25px;
+    }
+}
