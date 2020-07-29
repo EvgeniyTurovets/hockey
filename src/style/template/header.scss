@@ -1,0 +1,15 @@
+.data-header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.data-header-left {
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "NeoSansPro";
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c9c9c9;
+    font-size: 14px;
+}

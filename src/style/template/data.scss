@@ -1,8 +1,6 @@
 .sk-data{
-    padding-top: 126px;
     display: flex;
     justify-content: center;
-    padding-bottom: 81px;
 }
 .sk-data-item {
     margin-bottom: 20px;
@@ -59,9 +57,9 @@
     align-items: center;
 }
 @media(max-width: 1199px){
-    .sk-data{
-        padding-top: 50px;
-    }
+    // .sk-data{
+    //     padding-top: 50px;
+    // }
 }
 @media(max-width: 767px){
     .sk-data-item label{

@@ -1,15 +1,15 @@
 
-if($("#datepicker1").length){
+if ($("#datepicker1").length) {
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
 		prevText: 'Предыдущий',
 		nextText: 'Следующий',
 		currentText: 'Сегодня',
-		monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-		monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-		dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-		dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+		monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+		dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+		dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+		dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
 		weekHeader: 'Не',
 		dateFormat: 'dd.mm.yy',
 		firstDay: 1,
@@ -18,41 +18,41 @@ if($("#datepicker1").length){
 		yearSuffix: ''
 	};
 	$.datepicker.setDefaults($.datepicker.regional['ru']);
-	
-	$(function(){
+
+	$(function () {
 		$("#datepicker1").datepicker();
 		$("#datepicker2").datepicker();
-	
+
 	});
 }
 
 
 
-$(function(){
+$(function () {
 
-	$('.mesto-table table td.active').click(function(){
+	$('.mesto-table table td.active').click(function () {
 		$(this).toggleClass('zakaz')
 	})
 
-	$('.led-right button').click(function(){
+	$('.led-right button').click(function () {
 		$(".bilet-modal").fadeIn();
 	})
 
-	$('.modal-close').click(function(){
+	$('.modal-close').click(function () {
 		$(this).closest('.bilet-modal').fadeOut()
 	})
 
-	$(".bilet-modal").mouseup(function (e){ // событие клика по веб-документу
+	$(".bilet-modal").mouseup(function (e) { // событие клика по веб-документу
 		var div = $(".modal-wrap"); // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку
 			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
-				$(this).closest('.bilet-modal').fadeOut()
+			$(this).closest('.bilet-modal').fadeOut()
 		}
 	});
 
 
 	//выбор сектора
-	$('.activepath').click(function(){
+	$('.activepath').click(function () {
 		$(this).toggleClass('active')
 	})
 
@@ -64,8 +64,10 @@ $(function(){
 	let dataMest;
 	let dataFoto;
 	let dataLink;
-	$('.sector-schema-wrap').mousemove(function(event){
-		
+	let linkCount = 0;
+	let navLink = 0;
+	$('.sector-schema-wrap').mousemove(function (event) {
+
 		var pos = $('.sector-schema-wrap').offset();
 		var elem_left = pos.left.toFixed(0);
 		var elem_top = pos.top.toFixed(0);
@@ -74,21 +76,25 @@ $(function(){
 	});
 
 
-	function modalrender(){
+	function modalrender() {
 		$('.smodal').fadeIn(200)
 
 		$('#sector-num').html(dataId)
 		$('#smodal-mest').html(dataMest)
 		$('#smodal-price').html(dataPrice)
-		$('#smodal-foto').attr('src', dataFoto)
 		$('#smodal-link').attr('href', dataLink)
 
 		$('.sector-schema-wrap').click()
 		$('.smodal').css('top', y)
-		$('.smodal').css('left', x)	
+		$('.smodal').css('left', x)
+
+
+		linkCount = dataFoto.split("+").length;
+		dataFoto = dataFoto.split('+');
+		$('#smodal-foto').attr('src', dataFoto[navLink])
 	}
-	
-	$(".activepath").mouseenter(function(e){
+
+	$(".activepath").mouseenter(function (e) {
 		$(this).addClass('pathfocus')
 
 		dataId = $(this).attr('data-id')
@@ -97,10 +103,10 @@ $(function(){
 		dataFoto = $(this).attr('data-foto')
 		dataLink = $(this).attr('data-link')
 
-		var myVar = setInterval(function(e){
-			if($(".activepath").hasClass('pathfocus') != 0){
+		var myVar = setInterval(function (e) {
+			if ($(".activepath").hasClass('pathfocus') != 0) {
 				ticker++;
-				if(ticker == 15){
+				if (ticker == 15) {
 					clearInterval(myVar);
 					ticker = 0
 
@@ -108,84 +114,43 @@ $(function(){
 				}
 			}
 		}, 100)
-		
+
 	});
 
-	$(".activepath").mouseout(function(){
+	$(".activepath").mouseout(function () {
 		$(".activepath").removeClass('pathfocus')
 		ticker = 0
-		
+
 	})
 
-	$(document).mouseup(function (e){ // событие клика по веб-документу
+	$(document).mouseup(function (e) { // событие клика по веб-документу
 		var div = $('.smodal'); // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			&& div.has(e.target).length === 0) { // и не по его дочерним элементам
 			$('.smodal').fadeOut()
 		}
 	});
-	
-	function modalReload(){
-		$('#sector-num').html(dataId)
-		$('#smodal-mest').html(dataMest)
-		$('#smodal-price').html(dataPrice)
-		$('#smodal-foto').attr('src', dataFoto)
-		$('#smodal-link').attr('href', dataLink)
-		
+
+	function modalReload() {
+		$('#smodal-foto').attr('src', dataFoto[navLink])
 	}
-	$('.smodal-right-btn').click(function(){
-		let nextPath = parseInt(dataId) + 1
-		if(nextPath == 327){
-			nextPath = 400
-		}
-		if(nextPath == 217){
-			nextPath = 300
-		}
-		if(nextPath == 118){
-			nextPath = 200
-		}
-		console.log(nextPath)
-		if(nextPath <= 413){
-			let $nextPath = $('.activepath[data-id=' + nextPath + ']')
-			
-			dataId = $nextPath.attr('data-id')
-			dataPrice = $nextPath.attr('data-price')
-			dataMest = $nextPath.attr('data-mest')
-			dataFoto = $nextPath.attr('data-foto')
-			dataLink = $nextPath.attr('data-link')
 
-			modalReload()
+	$('.smodal-right-btn').click(function () {
+		if (navLink + 1 < linkCount) {
+			navLink++;
 		}
+		modalReload()
 	})
 
-	$('.smodal-left-btn').click(function(){
-		let prevPath = parseInt(dataId) - 1
-		if(prevPath == 399){
-			prevPath = 326
+	$('.smodal-left-btn').click(function () {
+		if (navLink != 0) {
+			navLink--;
 		}
-		if(prevPath == 299){
-			prevPath = 217
-		}
-		if(prevPath == 199){
-			prevPath = 118
-		}
-		if(prevPath >= 100){
-			let $nextPath = $('.activepath[data-id=' + prevPath + ']')
-			
-			dataId = $nextPath.attr('data-id')
-			dataPrice = $nextPath.attr('data-price')
-			dataMest = $nextPath.attr('data-mest')
-			dataFoto = $nextPath.attr('data-foto')
-			dataLink = $nextPath.attr('data-link')
-
-			modalReload()
-		}
-		
+		modalReload()
 	})
 
 
-
-	$('.mesto-burger').click(function(){
+	$('.mesto-burger').click(function () {
 		$(this).toggleClass('active')
 		$('.mesto-reg').toggleClass('active')
 	})

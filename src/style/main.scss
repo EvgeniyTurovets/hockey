@@ -43,7 +43,7 @@ body {
     max-width: 1200px;
     position: relative;
 }
-
+@import 'template/header.scss';
 
 // предопалата
 @import 'template/pay.scss';
@@ -810,6 +810,20 @@ body {
     stroke: #00a19e;
     stroke-width: 2px;
 }
+.sector-text2{
+    width: 100%;
+    height: 100%;
+}
+.sector-text2 .text1{
+    position: absolute;
+    top: 60%;
+    left: 36%;
+}
+.sector-text2 .text2{
+    position: absolute;
+    top: 22%;
+    left: 40%;
+}
 @media(max-width: 1199px){
     .sector-schema-wrap{
         width: 700px;
@@ -829,6 +843,14 @@ body {
     }
     .sbrau2{
         top: 4%;
+    }
+    .sector-text2 .text2{
+        left: 39.5%;
+        width: 150px;
+    }
+    .sector-text2 .text1 {
+        left: 37%;
+        width: 180px;
     }
 }
 @media(max-width: 1023px){

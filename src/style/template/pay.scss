@@ -2,9 +2,12 @@
 .sk-wrap{
     margin: 0 49px;
 }
+.pay-top{
+    padding-top: 20px;
+}
 .sk-pay{
     display: flex;
-    padding-top: 99px;
+    padding-top: 30px;
     padding-bottom: 75px;
     overflow: hidden;
 }
@@ -14,7 +17,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 53px;
 }
 .sk-pay-l-top{
     display: flex;
@@ -52,7 +54,7 @@
     background-size: cover;
     height: 171px;
     overflow: hidden;
-    margin-top: 114px;
+    margin-top: 40px;
 }
 
 
@@ -65,17 +67,14 @@
 }
 .sk-pay-r p{
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 17px;
-}
-.sk-pay-r p:last-child{
-    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
 }
 .pay-img-row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    margin-top: 30px;
 }
 .pay-img-row img{
     
@@ -121,6 +120,9 @@
 }
 
 @media(max-width: 767px){
+    .sk-pay-r p{
+        font-size: 14px;
+    }
     .sk-wrap{
         margin: 0 15px;
     }
