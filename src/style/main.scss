@@ -26,6 +26,11 @@ body{
     src: url("../fonts/NeoSansPro-Bold.otf") format("truetype");
     font-weight: bold;
 }
+@font-face {
+    font-family: "NeoSansPro";
+    src: url("../fonts/NeoSansPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
 
 body {
     font-family: "NeoSansPro", "Arial", sans-serif;

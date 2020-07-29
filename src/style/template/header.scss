@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-bottom: 40px;
+    padding-top: 36px;
 }
 
 .data-header-left {
@@ -12,4 +14,129 @@
     text-transform: uppercase;
     border-bottom: 1px solid #c9c9c9;
     font-size: 14px;
+}
+
+.data-header-left a {
+    display: block;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+    font-family: "NeoSansPro";
+    font-weight: bold;
+}
+/*
+.data-header-left a.active::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    padding-left: 0;
+    right: 0;
+    bottom: -1px;
+    background-color: #eabf52;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
+*/
+.data-header-left a:hover::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    padding-left: 0;
+    right: 0;
+    bottom: -1px;
+    background-color: #eabf52;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
+.data-reg {
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "NeoSansPro";
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c9c9c9;
+    font-size: 14px;
+    position: relative;
+}
+.data-reg__email {
+    position: absolute;
+    right: 20px;
+    top: -16px;
+    font-size: 14px;
+    color: #01a19f;
+    text-transform: none;
+    text-decoration: none;
+}
+.data-reg__link {
+    display: block;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    color: #00a19e;
+    font-family: "NeoSansPro";
+    font-weight: bold;
+}
+.data-reg__link:hover::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    padding-left: 0;
+    right: 0;
+    bottom: -1px;
+    background-color: #eabf52;
+    z-index: 1;
+    display: block;
+    position: absolute;
+}
+.promokod {
+    display: flex;
+    align-items: center;
+}
+.promokod input {
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #c9c9c9;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "NeoSansPro";
+    font-weight: 500;
+}
+.promokod button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid #febe10;
+    margin-left: 7px;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 25px;
+    color: #9a9a9a;
+    font-family: "LeagueGothic";
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.promokod button:hover {
+    background-color: #febe10;
+    color: #ffffff;
+}
+.promokod input::-webkit-input-placeholder {color:#000000;  opacity: 1;}
+.promokod input::-moz-placeholder {color:#000000;  opacity: 1;}
+.promokod input:-moz-placeholder {color:#000000;  opacity: 1;}
+.promokod input:-ms-input-placeholder {color:#000000;  opacity: 1;}
+.sk-zakaz {
+    padding-top: 0 !important;
 }
