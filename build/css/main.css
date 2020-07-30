@@ -204,6 +204,205 @@ body {
 .sk-zakaz {
   padding-top: 0 !important; }
 
+.sk-index__line {
+  width: 100%;
+  text-align: center;
+  background-color: #0a2543;
+  padding: 3px 0;
+  position: relative;
+  height: 52px; }
+
+.sk-index__line:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 79px;
+  height: 52px;
+  background-image: url(../img/secl.png); }
+
+.sk-index__line:after {
+  content: '';
+  position: absolute;
+  right: 20%;
+  top: 0;
+  width: 79px;
+  height: 52px;
+  background-image: url(../img/secr.png); }
+
+.sk-index__title {
+  font-size: 38px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.sk-index__abonlist {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.sk-index__abonitem {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 30px 36px 30px 20px; }
+
+.sk-index__abonleft {
+  width: 100%; }
+
+.sk-index__abontitle {
+  display: block;
+  font-size: 41px;
+  color: #000000;
+  font-family: 'LeagueGothic';
+  font-weight: 400; }
+
+.sk-index__abonsubtitle {
+  display: block;
+  font-size: 17px;
+  color: #000000;
+  margin-top: 14px; }
+
+.sk-index__abonbutton {
+  padding: 16px 15px;
+  border: 1px solid #febe10;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 26px;
+  color: #9a9a9a;
+  font-weight: 400;
+  font-family: 'LeagueGothic';
+  width: 192px;
+  display: inline-block; }
+  .sk-index__abonbutton:hover {
+    background-color: #febe10;
+    color: #fff; }
+
+.sk-index__matchlist {
+  padding: 10px 0; }
+
+.sk-index__matchitem {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 30px 36px 30px 20px;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #c9c9c9; }
+
+.sk-index__matchleft {
+  width: 30%;
+  text-align: left; }
+
+.sk-index__matchcenter {
+  width: 40%;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.sk-index__matchright {
+  width: 30%;
+  text-align: right; }
+
+.sk-index__matchtitle {
+  display: block;
+  font-size: 41px;
+  color: #000000;
+  font-family: 'LeagueGothic';
+  font-weight: 400; }
+
+.sk-index__matchsubtitle {
+  display: block;
+  font-size: 17px;
+  color: #000000;
+  margin-top: 14px; }
+
+.sk-index__matchcom1 {
+  margin-right: 50px; }
+
+.sk-index__matchis {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 40px; }
+  .sk-index__matchis-v {
+    font-size: 33px;
+    color: #c9c9c9;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    text-transform: uppercase; }
+  .sk-index__matchis-s {
+    font-size: 33px;
+    color: #c9c9c9;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    text-transform: uppercase; }
+
+.sk-index__matchcom2 {
+  margin-left: 50px; }
+
+.sk-index__matchicon {
+  width: 120px;
+  height: 120px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.sk-index__matchimg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto; }
+
+.sk-index__matchname {
+  font-weight: 400;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 26px;
+  color: #000000;
+  font-family: 'LeagueGothic';
+  font-weight: 400; }
+
+.sk-index__matchbutton {
+  padding: 16px 15px;
+  border: 1px solid #febe10;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 26px;
+  color: #9a9a9a;
+  font-weight: 400;
+  font-family: 'LeagueGothic';
+  width: 192px;
+  display: inline-block; }
+  .sk-index__matchbutton:hover {
+    background-color: #febe10;
+    color: #fff; }
+
 .sk-wrap {
   margin: 0 49px; }
 

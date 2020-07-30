@@ -1,0 +1,201 @@
+.sk-index {
+
+}
+.sk-index__line {
+  width: 100%;
+  text-align: center;
+  background-color: #0a2543;
+  padding: 3px 0;
+  position: relative;
+  height: 52px;
+}
+.sk-index__line:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  top: 0;
+  width: 79px;
+  height: 52px;
+  background-image: url(../img/secl.png);
+}
+.sk-index__line:after {
+  content: '';
+  position: absolute;
+  right: 20%;
+  top: 0;
+  width: 79px;
+  height: 52px;
+  background-image: url(../img/secr.png);
+}
+.sk-index__title {
+  font-size: 38px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sk-index {
+  &__abonlist {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__abonitem {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px 30px 20px;
+  }
+  &__abonleft {
+    width: 100%;
+  }
+  &__abonright {
+
+  }
+  &__abontitle {
+    display: block;
+    font-size: 41px;
+    color: #000000;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+  }
+  &__abonsubtitle {
+    display: block;
+    font-size: 17px;
+    color: #000000;
+    margin-top: 14px;
+  }
+  &__abonbutton {
+    padding: 16px 15px;
+    border: 1px solid #febe10;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 26px;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-family: 'LeagueGothic';
+    width: 192px;
+    display: inline-block;
+    &:hover {
+      background-color: #febe10;
+      color: #fff;
+    }
+  }
+
+  &__matchlist {
+    padding: 10px 0;
+  }
+  &__matchitem {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 36px 30px 20px;
+    align-items: center;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  &__matchleft {
+    width: 30%;
+    text-align: left;
+  }
+  &__matchcenter {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__matchright {
+    width: 30%;
+    text-align: right;
+  }
+  &__matchtitle {
+    display: block;
+    font-size: 41px;
+    color: #000000;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+  }
+  &__matchsubtitle {
+    display: block;
+    font-size: 17px;
+    color: #000000;
+    margin-top: 14px;
+  }
+  &__matchcom1 {
+    margin-right: 50px;
+  }
+  &__matchis {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 40px;
+    &-v {
+      font-size: 33px;
+      color: #c9c9c9;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: -5px;
+      text-transform: uppercase;
+    }
+    &-s {
+      font-size: 33px;
+      color: #c9c9c9;
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      text-transform: uppercase;
+    }
+  }
+  &__matchcom2 {
+    margin-left: 50px;
+  }
+  &__matchicon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__matchimg {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  &__matchname {
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #000000;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+  }
+  &__matchbutton {
+    padding: 16px 15px;
+    border: 1px solid #febe10;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 26px;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-family: 'LeagueGothic';
+    width: 192px;
+    display: inline-block;
+    &:hover {
+      background-color: #febe10;
+      color: #fff;
+    }
+  }
+}

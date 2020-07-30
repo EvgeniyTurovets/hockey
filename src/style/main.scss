@@ -50,6 +50,9 @@ body {
 }
 @import 'template/header.scss';
 
+// главная
+@import 'template/index.scss';
+
 // предопалата
 @import 'template/pay.scss';
 
@@ -61,6 +64,9 @@ body {
 
 //выбор места
 @import 'template/mesto.scss';
+
+// заказ оплачен
+@import 'template/zakaz-opl.scss';
 
 .sector{
     padding-bottom: 50px;
