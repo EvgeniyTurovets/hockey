@@ -1,0 +1,139 @@
+.sk-podopl {
+  &__match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  &__matchclub1 {
+
+  }
+  &__matchinfo {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__matchclub2 {
+
+  }
+  &__matchtop {
+    width: 120px;
+    height: 120px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  &__matchimg {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+  &__matchname {
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 26px;
+    color: #000000;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+  }
+  &__matchtitle {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'LeagueGothic';
+    font-weight: 400;
+    display: block;
+    text-align: center;
+  }
+  &__matchsubtitle {
+    display: block;
+    font-size: 17px;
+    color: #000000;
+    margin-top: 10px;
+  }
+  &__result {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 0 20px 8px 20px;
+    border-bottom: 1px solid #c9c9c9;
+  }
+  &__data {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 8px 20px 0 20px;
+  }
+  &__opl {
+    padding-bottom: 24px;
+  }
+  &__oplcont {
+    display: block;
+    width: 100%;
+    max-width: 530px;
+    border: 1px solid #c9c9c9;
+    padding: 21px 30px 26px 30px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    &::after {
+      content: '';
+      width: 26px;
+      height: 24px;
+      background-image: url(../img/trangle.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: left bottom;
+      display: block;
+      position: absolute;
+      left: -1px;
+      bottom: -24px;
+      z-index: 2;
+    }
+    &::before {
+      content: '';
+      height: 1px;
+      background-color: #ffffff;
+      display: block;
+      width: 24px;
+      bottom: -1px;
+      left: 0;
+      z-index: 1;
+      position: absolute;
+    }
+  }
+  &__opldescription {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+  }
+  &__oplwp {
+    width: 100%;
+    margin-top: 1px;
+  }
+  &__oplimg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

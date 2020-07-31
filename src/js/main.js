@@ -154,4 +154,26 @@ $(function () {
 		$(this).toggleClass('active')
 		$('.mesto-reg').toggleClass('active')
 	})
+
+	$('.sk-reg__regseltop').on('click', function() {
+		$(this).toggleClass('active');
+		$(this).parent().children('.sk-reg__regsellist').toggle();
+	});
+	$('.sk-reg__regsellink').on('click', function() {
+		var thname = $(this).data('value');
+		$('.sk-reg__regsellink').removeClass('active');
+		$(this).addClass('active');
+		$(this).parent().parent().parent().children('.sk-reg__regseltop').removeClass('active');
+        $(this).parent().parent().parent().children('.sk-reg__regseltop').text(thname);
+        $(this).parent().parent().parent().children('input[type="hidden"]').val(thname);
+        $(this).parent().parent('.sk-reg__regsellist').hide();
+        return false;
+	});
+    $(document).mouseup(function(e) {
+        var div = $(".sk-reg__regsellist"); // тут указываем ID элемента
+        if (!div.is(e.target) && div.has(e.target).length === 0) {
+            div.hide();
+            $('.sk-reg__regseltop').removeClass('active');
+        }
+    });
 })

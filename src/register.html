@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+
+</head>
+
+<body>
+
+<div class="width-container">
+    <div class="sk-wrap">
+
+        <div class="data-header">
+            <div class="mesto-header-left">
+                <a href="" class="">купить билет</a>
+                <a href="" class="">регистрация</a>
+            </div>
+            <div class="data-reg">
+                <a href="" class="data-reg__link">войти</a>
+                <a href="" class="data-reg__link">регистрация</a>
+            </div>
+            <div class="mesto-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="sk-reg">
+            <div class="sk-reg__regtop">
+                <p class="sk-reg__reginfo">
+                    Вся введенная Вами информация конфиденциальна и не передается третьим лицам. На Ваш электронный адрес будет выслано сообщение с Вашим персональным кодом подтверждения регистрации.
+                </p>
+            </div>
+            <div class="sk-data sk-reg__regform">
+                <form action="">
+                    <div class="sk-data-item">
+                        <label>Электронная почта<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Пароль<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Подтверждение пароля<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Фамилия<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Имя<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Отчество</label>
+                        <input type="text">
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Дата рождения<span>*</span></label>
+                        <input type="text" required placeholder="ДД.ММ.ГГГГ">
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Телефон<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Пол<span>*</span></label>
+
+                        <div class="sk-reg__regsel">
+                            <input type="hidden" value="Мужской">
+                            <div class="sk-reg__regseltop">
+                                Мужской
+                            </div>
+                            <ul class="sk-reg__regsellist" style="display: none;">
+                                <li class="sk-reg__regselitem">
+                                    <a href="#" class="sk-reg__regsellink active" data-value="Мужской">
+                                        Мужской
+                                    </a>
+                                </li>
+                                <li class="sk-reg__regselitem">
+                                    <a href="#" class="sk-reg__regsellink" data-value="Женский">
+                                        Женский
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Город<span>*</span></label>
+                        <input type="text" required>
+                    </div>
+                    <div class="sk-data-item">
+                        <label>Введите символы с картинки<span>*</span></label>
+                        <div class="sk-reg__regcap">
+                            <div class="sk-reg__regcapleft">
+                                <div class="sk-reg__regcapimg" style="background-image: url('img/capcha.jpg');"></div>
+                            </div>
+                            <div class="sk-reg__regcapright">
+                                <input type="text" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sk-reg__regcheck">
+                        <input type="checkbox" id="ch1" checked>
+                        <label for="ch1">
+                            <p>
+                                Я ознакомлен с <a href="#">правилами приобретения.</a>
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="sk-reg__regcheck">
+                        <input type="checkbox" id="ch2">
+                        <label for="ch2">
+                            <p>
+                                Даю разрешение (согласие) АНО «СК «Кубань-Регион» (далее - ХК «Сочи») и ее уполномоченным представителям получать, собирать, хранить, обрабатывать и использовать мои персональные данные: фамилию, имя, отчество, мобильный телефон, адрес электронной почты, в целях восстановления абонемента/билета в случае их утери, для реализации программы лояльности.
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="sk-reg__regcheck">
+                        <input type="checkbox" id="ch3">
+                        <label for="ch3">
+                            <p>
+                                Я подтверждаю, что разрешаю ХК «Сочи» направлять мне информацию о проводимых ХК «Сочи»  и его партнерами акциях в рамках программы лояльности, корреспонденцию на указанный мной адрес электронной почты и/или на номер мобильного телефона.
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="sk-reg__regbottom">
+                        <button class="sk-btn">Сохранить</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

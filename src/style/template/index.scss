@@ -134,6 +134,8 @@
     position: relative;
     display: inline-block;
     width: 34px;
+    min-width: 34px;
+    max-width: 34px;
     height: 40px;
     &-v {
       font-size: 33px;
@@ -197,5 +199,35 @@
       background-color: #febe10;
       color: #fff;
     }
+  }
+
+  &__partner {
+    margin-top: 40px;
+  }
+  &__partnertitle {
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+  }
+  &__partnerlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 19px;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  &__partneritem {
+    width: 25%;
+  }
+  &__partnerimg {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
   }
 }

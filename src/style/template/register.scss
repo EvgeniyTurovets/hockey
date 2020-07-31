@@ -1,0 +1,220 @@
+.sk-data-item input {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sk-data-item input::-webkit-input-placeholder {color: #b4b4b4; opacity: 1;}
+.sk-data-item input::-moz-placeholder {color: #b4b4b4; opacity: 1;}
+.sk-data-item input:-moz-placeholder {color: #b4b4b4; opacity: 1;}
+.sk-data-item input:-ms-input-placeholder {color: #b4b4b4; opacity: 1;}
+
+.sk-reg {
+  &__regtop {
+    display: block;
+    max-width: 646px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 54px;
+    margin-top: 14px;
+  }
+  &__reginfo {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__regform {
+
+  }
+
+  &__regsel {
+    position: relative;
+    width: 310px;
+  }
+  &__regseltop {
+    height: 41px;
+    line-height: 39px;
+    padding: 0 40px 0 15px;
+    border: 1px solid #c9c9c9;
+    font-family: "NeoSansPro";
+    display: block;
+    width: 100%;
+    color: #b4b4b4;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 13px;
+      background-image: url(../img/select-icon.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      background-position: center center;
+      right: 10px;
+      top: 50%;
+      margin-top: -6.5px;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  &__regseltop.active {
+    &::after {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    }
+  }
+  &__regsellist {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #c9c9c9;
+    background-color: #ffffff;
+  }
+  &__regselitem {
+    display: block;
+    width: 100%;
+  }
+  &__regsellink {
+    display: block;
+    color: #b4b4b4;
+    font-size: 20px;
+    text-decoration: none;
+    height: 41px;
+    line-height: 39px;
+    padding: 0 15px 0 15px;
+    &:hover {
+      background-color: #febe10;
+      color: #ffffff;
+    }
+  }
+  &__regsellink.active {
+
+  }
+
+  &__regcap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 310px;
+    padding: 0;
+  }
+  &__regcapleft {
+    padding-right: 15px;
+    width: 100%;
+  }
+  &__regcapright {
+    input {
+      width: 133px;
+    }
+  }
+  &__regcapimg {
+    height: 41px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+  }
+  &__regcheck {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: -49px;
+    label {
+      padding-left: 49px;
+      display: block;
+      position: relative;
+      &::before {
+        content: '';
+        width: 28px;
+        height: 28px;
+        display: block;
+        border: 1px solid #c9c9c9;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+      }
+      &::after {
+        content: '';
+        width: 17px;
+        height: 13px;
+        background-image: url(../img/check.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-position: center center;
+        position: absolute;
+        left: 6px;
+        top: 8px;
+        z-index: 2;
+        display: none;
+        cursor: pointer;
+      }
+      p {
+        display: block;
+        width: 310px;
+        border: 1px solid #c9c9c9;
+        text-align: justify;
+        padding: 12px 16px;
+        font-size: 14px;
+        color: #000000;
+        font-weight: 400;
+        margin-bottom: 24px;
+        position: relative;
+        &::after {
+          content: '';
+          width: 26px;
+          height: 24px;
+          background-image: url(../img/trangle.png);
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+          background-position: left bottom;
+          display: block;
+          position: absolute;
+          left: -1px;
+          bottom: -24px;
+          z-index: 2;
+        }
+        &::before {
+          content: '';
+          height: 1px;
+          background-color: #ffffff;
+          display: block;
+          width: 24px;
+          bottom: -1px;
+          left: 0;
+          z-index: 1;
+          position: absolute;
+        }
+      }
+      a {
+        text-decoration: underline;
+        font-size: 14px;
+        color: #00a19e;
+        &:hover {
+          text-decoration: none;
+          color: #00a19e;
+        }
+      }
+    }
+    input {
+      display: none;
+      &:checked + label::after {
+        display: block;
+      }
+    }
+  }
+  &__regbottom {
+    margin-top: 10px;
+  }
+}
