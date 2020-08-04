@@ -2165,6 +2165,16 @@ body {
 .sk-reg__regbottom {
   margin-top: 10px; }
 
+@media (max-width: 424px) {
+  .sk-reg__regcheck {
+    margin-left: 0; }
+  .sk-reg__regcheck label p {
+    width: 100%; }
+  .sk-reg__regcap {
+    width: 100%; }
+  .sk-reg__regsel {
+    width: 100%; } }
+
 .sector-schema {
   text-align: center;
   width: 100%;

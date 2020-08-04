@@ -146,6 +146,8 @@ $(function () {
 		}
 	});
 
+
+	//слайдер фото в модалке выбора сектора
 	function modalReload() {
 		$('#smodal-foto').attr('src', dataFoto[navLink])
 	}
@@ -165,15 +167,19 @@ $(function () {
 	})
 
 
+	//бургер
 	$('.mesto-burger').click(function () {
 		$(this).toggleClass('active')
 		$('.data-reg').toggleClass('active')
 	})
 
+
+	//страница регистрации
 	$('.sk-reg__regseltop').on('click', function() {
 		$(this).toggleClass('active');
 		$(this).parent().children('.sk-reg__regsellist').toggle();
 	});
+
 	$('.sk-reg__regsellink').on('click', function() {
 		var thname = $(this).data('value');
 		$('.sk-reg__regsellink').removeClass('active');
@@ -184,6 +190,7 @@ $(function () {
         $(this).parent().parent('.sk-reg__regsellist').hide();
         return false;
 	});
+
     $(document).mouseup(function(e) {
         var div = $(".sk-reg__regsellist"); // тут указываем ID элемента
         if (!div.is(e.target) && div.has(e.target).length === 0) {
@@ -192,10 +199,14 @@ $(function () {
         }
     });
 
+
+    //модалка выбора сектора
     $('.close-modal-cross').click(function(){
     	$('.smodal').fadeOut()
     })
 
+
+    //проскролить сектор пополам
     if($(window).width() < 768){
     	let distance =  $('.sector-schema-wrap').width() - $('.sector-schema').width();
 	    distance = distance / 2;
@@ -204,7 +215,7 @@ $(function () {
 		  box.stop().animate({
 		    scrollLeft: '+=' + (distance)
 		  
-		});
+		}, 0);
     }
 
     
