@@ -48,8 +48,10 @@ body {
     max-width: 1200px;
     position: relative;
 }
-@import 'template/head.scss';
-
+.sk-wrap{
+    margin: 0 49px;
+    padding-bottom: 25px;
+}
 @import 'template/header.scss';
 
 // главная
@@ -73,9 +75,6 @@ body {
 // регистрация
 @import 'template/register.scss';
 
-.sector{
-    padding-bottom: 50px;
-}
 
 .sector-schema{
     text-align: center;
@@ -913,9 +912,7 @@ body {
         width: 0;
         padding: 0;
     }
-    .sector{
-        padding-top: 20px;
-    }
+    
 }
 
 @media(max-width: 559px){

@@ -152,7 +152,7 @@ $(function () {
 
 	$('.mesto-burger').click(function () {
 		$(this).toggleClass('active')
-		$('.mesto-reg').toggleClass('active')
+		$('.data-reg').toggleClass('active')
 	})
 
 	$('.sk-reg__regseltop').on('click', function() {

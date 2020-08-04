@@ -1,7 +1,3 @@
-.mesto{
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
 
 .mesto-header{
     display: flex;
@@ -444,56 +440,11 @@
         padding:  0 20px;
     }
 }
-.mesto-burger{
-    display: none;
-}
+
 @media(max-width: 767px){
-    .mesto-header{
-        position: relative;
-        overflow: hidden;
-        min-height: 128px;
-    }
-    .mesto-burger{
-        display: block;
-        width: 20px;
-        height: 17px;
-        margin-top: 12px;
-        position: relative;
-    }
-    .mesto-burger span{
-        width: 20px;
-        height: 3px;
-        display: block;
-        position: absolute;
-        background-color: #000000;
-        transition: 0.3s all;
-    }
-    .mesto-burger span:nth-child(1){
-        top: 0;
-    }
-    .mesto-burger span:nth-child(2){
-        top: calc(50% - 1.5px);
-    }
-    .mesto-burger span:nth-child(3){
-        bottom: 0;
-    }
-    .mesto-burger.active span:nth-child(1){
-        transform: rotate(-45deg);
-        top: 40%;
-    }
-    .mesto-burger.active span:nth-child(3){
-        transform: rotate(45deg);
-        bottom: 40%;
-    }
-    .mesto-burger.active span:nth-child(2){
-        opacity: 0;
-       
-    }
+    
     .plashka > div{
         width: 345px;
-    }
-    .mesto{
-        padding-top: 20px;
     }
     .mesto-info-l{
         flex:  0 0 auto;
