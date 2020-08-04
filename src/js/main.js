@@ -85,8 +85,11 @@ $(function () {
 		$('#smodal-link').attr('href', dataLink)
 
 		$('.sector-schema-wrap').click()
-		$('.smodal').css('top', y)
-		$('.smodal').css('left', x)
+		if($(window).width() > 1024){
+			$('.smodal').css('top', y)
+			$('.smodal').css('left', x)
+		}
+		
 
 
 		linkCount = dataFoto.split("+").length;
@@ -105,13 +108,25 @@ $(function () {
 
 		var myVar = setInterval(function (e) {
 			if ($(".activepath").hasClass('pathfocus') != 0) {
-				ticker++;
-				if (ticker == 15) {
-					clearInterval(myVar);
-					ticker = 0
 
-					modalrender()
+				ticker++;
+			
+				if($(window).width() <= 1024){
+					if (ticker == 1) {
+						clearInterval(myVar);
+						ticker = 0
+
+						modalrender()
+					}
+				}else{
+					if (ticker == 15) {
+						clearInterval(myVar);
+						ticker = 0
+
+						modalrender()
+					}
 				}
+
 			}
 		}, 100)
 
@@ -176,4 +191,21 @@ $(function () {
             $('.sk-reg__regseltop').removeClass('active');
         }
     });
+
+    $('.close-modal-cross').click(function(){
+    	$('.smodal').fadeOut()
+    })
+
+    if($(window).width() < 768){
+    	let distance =  $('.sector-schema-wrap').width() - $('.sector-schema').width();
+	    distance = distance / 2;
+		box = $('.sector-schema');
+		
+		  box.stop().animate({
+		    scrollLeft: '+=' + (distance)
+		  
+		});
+    }
+
+    
 })

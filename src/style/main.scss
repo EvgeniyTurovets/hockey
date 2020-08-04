@@ -836,7 +836,7 @@ body {
 }
 .sector-text2 .text2{
     position: absolute;
-    top: 22%;
+    top: 37.5%;
     left: 40%;
 }
 @media(max-width: 1199px){
@@ -946,7 +946,69 @@ body {
 .mesto-burger__wrapper {
     display: none;
 }
+.close-modal-cross{
+    display: none;
+}
+//модалка
+@media(max-width: 1024px){
+    .smodal{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        background-color: #fff;
+        padding: 25px;
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        border: 1px solid #ccc;
+    }
+    .smodal-wrap img {
+        width: 150px;
+        height: 150px;
+    }
+    .smodal-wrap > svg{
+        display: none;
+    }
+    .smodal-wrap{
+        border: 1px solid #ccc;
+    }
 
+    .close-modal-cross{
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 25px;
+        right: 0;
+        top: 0;
+    }
+    .close-modal-cross span{
+        width: 20px;
+        height: 3px;
+        z-index: 2;
+        display: block;
+        position: absolute;
+        background-color: #000000;
+        transition: 0.3s all;
+    }
+    .close-modal-cross span:nth-child(1){
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 44%;
+    }
+    .close-modal-cross span:nth-child(2){
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        bottom: 44%;
+    }
+    #smodal-link{
+        margin-top: 25px;
+    }
+}
 
-// адаптив
-@import 'template/media.scss';
+@media(max-width: 500px){
+    .smodal{
+        width: calc(100% - 15px);
+        height: 400px;
+    }
+}
