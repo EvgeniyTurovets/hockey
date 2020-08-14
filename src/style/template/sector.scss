@@ -13,6 +13,7 @@
     top: 50%;
     position: absolute;
     left: 50%;
+    max-width: 310px;
     transform: translate(-50%, -50%);
 }
 .sector-schema .schema-svg{
@@ -24,15 +25,15 @@
 }
 
 .sblue path{
-    fill: #00a19e;
+    fill: #4068A1;
 }
 .dlue path{
-    fill: #00a19e;
+    fill: #4068A1;
 }
 .dlue:hover path{
     fill: #00173f;
     stroke: 1px;
-    stroke: #00a19e;
+    stroke: #4068A1;
     stroke-width: 2px;
 }
 .dlue.active path{
@@ -42,7 +43,7 @@
     stroke-width: 2px;
 }
 .dgreen path{
-    fill: #95c11a;
+    fill: #23A449;
 }
 .dgreen:hover path{
     fill: #00173f;
@@ -59,8 +60,11 @@
 .sbrau path{
     fill: #996d16;
 }
+.sbrau.gbiss > path{
+    fill: #EFDDB9;
+}
 .sgreen path{
-    fill: #95c11a;
+    fill: #23A449;
 }
 
 .sector-schema path{
@@ -79,6 +83,9 @@
     stroke: 1px;
     stroke: #996d16;
     stroke-width: 2px;
+}
+.sbrau path:hover{
+
 }
 .sbrau path.active{
     fill: #00173f;
@@ -190,13 +197,13 @@
 }
 
 .sbrau .sbiss{
-    fill: #f3e2c0;
+    fill: #926C29;
     pointer-events: none;
     z-index: 1;
     position: relative;
 }
 .sblue .sice{
-    fill: #bbd4f0;
+    fill: #AABCD6;
     pointer-events: none;
     z-index: 1;
     position: relative;
@@ -208,7 +215,7 @@
     position: relative;
 }
 .sblue.ice > path{
-    fill: #0e70b8;
+    fill: #6F87AA;
 }
 .sblue.ice > path:hover{
     fill: #00173f;
@@ -217,10 +224,10 @@
     stroke-width: 2px;
 }
 .elowgreen .yelow{
-    fill: #fab31a;
+    fill: #d59829;
 }
 .elowgreen .green{
-    fill: #95c11a;
+    fill: #23A449;
 }
 .elowgreen:hover .yelow{
     fill: #00173f;
@@ -453,11 +460,13 @@
 .s305{
     top: 7.3%;
     left: 42.8%;
+    color: #926C29!important;
     transform: rotate(-4deg);
 }
 .s306{
     top: 7.3%;
     left: 53.9%;
+    color: #926C29!important;
     transform: rotate(4deg);
 }
 .s307{
@@ -637,17 +646,17 @@
 }
 .sice1{
     top: 18.2%;
-    color: #0e70b8!important;
+    color: #fff!important;
     left: 47%;
 }
 .sice2{
     top: 80%;
-    color: #0e70b8!important;
+    color: #fff!important;
     left: 47%;
 }
 .sbrau2{
     top: 4.2%;
-    color: #996d16!important;
+    color: #fff!important;
     left: 47%;
 }
 .smodal{
@@ -770,7 +779,7 @@
         font-size: 80%;
     }
     .sector-schema-wrap > img{
-        width: 230px;
+        width: 220px;
     }
     .s108{
         left: 67.9%;
