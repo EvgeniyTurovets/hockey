@@ -3,11 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
 //эти стили нужно убрать
 body{
     background-color: #ccc;
 }
 .width-container{
+    flex: 1;
     background-color: #ffffff;
 }
 //эти стили нужно убрать
@@ -45,8 +53,13 @@ body {
 }
 .width-container {
     margin: 0 auto;
-    max-width: 1200px;
+    width: 1200px;
     position: relative;
+}
+@media(max-width: 1200px){
+    .width-container {
+        width: 100%;
+    }
 }
 .sk-wrap{
     margin: 0 49px;
@@ -132,15 +145,16 @@ body {
         max-width: 40%;
     }
     .data-reg{
-        height: max-content;
+        height: auto;
         opacity: 1;
+        overflow: visible;
     }
     .data-reg__link{
         display: none;
     }
     .data-reg__email{
         padding: 12px 0;
-        top: -15px;
+        top: -10px;
     }
     .mesto-burger span{
         background-color: #00a19e;
