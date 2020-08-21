@@ -169,10 +169,17 @@ $(function () {
 
 	//бургер
 	$('.mesto-burger').click(function () {
-		$(this).toggleClass('active')
-		$('.data-reg').toggleClass('active')
+		$('.mesto-burger').fadeOut()
+		$('.data-reg').fadeOut()
+		$('.mob-menu').addClass('active')
+		$('.width-container').addClass('active')
 	})
-
+	$('.burger').click(function(){
+		$('.mesto-burger').fadeIn()
+		$('.data-reg').fadeIn()
+		$('.mob-menu').removeClass('active')
+		$('.width-container').removeClass('active')
+	})
 
 	//страница регистрации
 	$('.sk-reg__regseltop').on('click', function() {
