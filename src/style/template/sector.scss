@@ -196,7 +196,7 @@
     position: relative;
 }
 .sblue .sice{
-    fill: #bbd4f0;
+    fill: #fff;
     pointer-events: none;
     z-index: 1;
     position: relative;
@@ -208,12 +208,12 @@
     position: relative;
 }
 .sblue.ice > path{
-    fill: #0e70b8;
+    fill: #fab31a;
 }
 .sblue.ice > path:hover{
     fill: #00173f;
     stroke: 1px;
-    stroke: #00a19e;
+    stroke: #fab31a;
     stroke-width: 2px;
 }
 .elowgreen .yelow{
@@ -637,12 +637,12 @@
 }
 .sice1{
     top: 18.2%;
-    color: #0e70b8!important;
+  
     left: 47%;
 }
 .sice2{
     top: 80%;
-    color: #0e70b8!important;
+    
     left: 47%;
 }
 .sbrau2{
